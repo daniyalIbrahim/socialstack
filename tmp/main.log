@@ -1,0 +1,29 @@
+Logger main initialized
+file: main.go line #22, func: main.main 
+Starting SocialSlab!
+username: dany_439
+password: himaliyan439
+will search for profile: onefootball
+Initializing scraper
+Processing elements chain
+Processing element: accept cookies
+Clicked: accept cookies
+Processing element: Phone/username/Email
+Set value: dany_439
+Processing element: Password
+Set value: himaliyan439
+Processing element: Login button
+Clicked: Login button
+Processing element: Don't Save login Details
+Clicked: Don't Save login Details
+Processing element: Don't Turn On Notifications
+Clicked: Don't Turn On Notifications
+Logged in Successfully!
+Processing elements chain
+Processing element: Searching For The Profile
+Set value: onefootball
+Processing element: Clicking On The Profile
+Clicked: Clicking On The Profile
+Processing element: Click Followers
+Clicked: Click Followers
+Scrolled Successfully!
