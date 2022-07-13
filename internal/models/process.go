@@ -2,87 +2,126 @@ package models
 
 import (
 	"github.com/go-rod/rod"
+	"github.com/go-rod/rod/lib/devices"
+	"github.com/go-rod/rod/lib/input"
 	"github.com/go-rod/rod/lib/launcher"
-	"net/http"
+	"time"
 )
 
-type ProcessScraper interface {
-	ProcessElementsChain(chained ElementsChained) error
-	ProcessElement(element WebPageElement) error
-	ProcessError(xpath string, name string) error
-}
+var (
+	ERRORS = 0
+)
 
 type Scraper struct {
-	browser *rod.Browser
-	page    *rod.Page
+	Browser *rod.Browser
+	Page    *rod.Page
 }
 
-func InitScraper() *rod.Browser {
+func (S *Scraper) NewBrowser() *rod.Browser {
 	logger.Debug("Initializing scraper")
 	url := launcher.New().Headless(false).Delete("use-mock-keychain").MustLaunch()
-	browser := rod.New().ControlURL(url).MustConnect()
-	return browser
+	S.Browser = rod.New().ControlURL(url).MustConnect()
+	return S.Browser
 }
-
+func (S *Scraper) NewPage(URL string) *rod.Page {
+	logger.Debug("Browsing To website: " + URL)
+	S.Page = S.Browser.MustPage(URL)
+	S.Page.MustEmulate(devices.Clear)
+	return S.Page
+}
 func (S *Scraper) GetHijacker() *rod.HijackRouter {
 	logger.Info("Initializing hijacker")
-	router := S.browser.HijackRequests()
+	router := S.Browser.HijackRequests()
 	defer router.MustStop()
-	router.MustAdd("*.js", func(ctx *rod.Hijack) {
-		// Here we update the request's header. Rod gives functionality to
-		// change or update all parts of the request. Refer to the documentation
-		// for more information.
-		ctx.Request.Req().Header.Set("My-Header", "test")
-		// LoadResponse runs the default request to the destination of the request.
-		// Not calling this will require you to mock the entire response.
-		// This can be done with the SetXxx (Status, Header, Body) functions on the
-		// ctx.Response struct.
-		_ = ctx.LoadResponse(http.DefaultClient, true)
-		// Here we append some code to every js file.
-		// The code will update the document title to "hi"
-		ctx.Response.SetBody(ctx.Response.Body() + "\n document.title = 'hi' ")
-	})
 	return router
 }
 
-func (S *Scraper) ProcessElementsChain(chained ElementsChained) error {
+func (S *Scraper) ProcessElementsChain(chained ElementsChained) ([]interface{}, error) {
+	var result []interface{}
 	logger.Info("Processing elements chain")
 	for _, element := range chained {
-		err := S.ProcessElement(element)
+		res, err := S.ProcessElement(element)
 		if err != nil {
 			logger.Errorf("Error: %v", err)
-			return err
+			return nil, err
 		}
+		logger.Debugf("Result: %v", res)
+		result = append(result, res)
 	}
-	return nil
+	return result, nil
 }
 
-func (S *Scraper) ProcessElement(element WebPageElement) error {
+func (S *Scraper) ProcessElement(element WebPageElement) (interface{}, error) {
+	var result interface{}
 	logger.Infof("Processing element: %v", element.ElementName)
 	switch element.Action {
 	case "Click":
-		elem, err := S.page.ElementX(element.Xpath)
-		if err != nil {
-			logger.Errorf("Error: %v", err)
-			return err
-		}
+		elem := S.Page.Timeout(15 * time.Second).MustElementX(element.Xpath)
+		elem.ScrollIntoView()
 		elem.MustClick()
 		logger.Debugf("Clicked: %v", element.ElementName)
 	case "SetValue":
-		elem, err := S.page.ElementX(element.Xpath)
+		elem, err := S.Page.ElementX(element.Xpath)
 		if err != nil {
 			logger.Errorf("Error: %v", err)
-			return err
+			return nil, err
 		}
 		elem.MustInput(element.ActionArg)
 		logger.Debugf("Set value: %v", element.ActionArg)
+	case "GetText":
+		elem, err := S.Page.ElementX(element.Xpath)
+		if err != nil {
+			logger.Errorf("Error: %v", err)
+			return nil, err
+		}
+		text, err := elem.Text()
+		logger.Debugf("Text value: %v", text)
+		return text, err
+	case "ImageSrc":
+		el, err := S.Page.Timeout(3 * time.Second).ElementX(element.Xpath)
+		if err != nil {
+			logger.Errorf("Error: %v", err)
+			// recover from panic
+			defer func() {
+				if r := recover(); r != nil {
+					logger.Errorf("Recover from Error: %v", r)
+					S.Page.KeyActions().Press(input.Escape).Release(input.Escape).MustDo()
+				}
+			}()
+			panic(err)
+		}
+		el.ScrollIntoView()
+		value, err := el.Attribute("src")
+		logger.Debugf("image: %s \n", *value)
+		S.Page.KeyActions().Press(input.Escape).Release(input.Escape).MustDo()
+		logger.Debugf("Closed Image: %v", element.ElementName)
+		return value, nil
+	case "MultiImageSrc":
+		el, err := S.Page.Timeout(3 * time.Second).ElementX(element.Xpath)
+		if err != nil {
+			logger.Errorf("Error: %v", err)
+			// recover from panic
+			defer func() {
+				if r := recover(); r != nil {
+					logger.Errorf("Recover from Error: %v", r)
+					S.Page.KeyActions().Press(input.Escape).Release(input.Escape).MustDo()
+				}
+			}()
+			panic(err)
+		}
+		el.ScrollIntoView()
+		value, err := el.Attribute("src")
+		logger.Debugf("image: %s \n", *value)
+		S.Page.KeyActions().Press(input.Escape).Release(input.Escape).MustDo()
+		logger.Debugf("Closed Image: %v", element.ElementName)
+		return value, nil
 	}
-	return nil
+	return result, nil
 }
 
 func (S *Scraper) ProcessError(xpath string, name string) error {
 	logger.Infof("Processing error: %v", name)
-	el, err := S.page.ElementX(xpath)
+	el, err := S.Page.ElementX(xpath)
 	if err != nil {
 		logger.Errorf("Error: %v", err)
 		return err

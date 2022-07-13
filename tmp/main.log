@@ -1,29 +1,368 @@
 Logger main initialized
 file: main.go line #22, func: main.main 
-Starting SocialSlab!
-username: dany_439
+Starting SocialClout!
+username: daniyal.ibrahim10@icloud.com
 password: himaliyan439
-will search for profile: onefootball
+will search for biomes in instagram
 Initializing scraper
+Browsing To website: https://www.instagram.com/
 Processing elements chain
 Processing element: accept cookies
 Clicked: accept cookies
+Result: <nil>
 Processing element: Phone/username/Email
-Set value: dany_439
+Set value: daniyal.ibrahim10@icloud.com
+Result: <nil>
 Processing element: Password
 Set value: himaliyan439
+Result: <nil>
 Processing element: Login button
 Clicked: Login button
-Processing element: Don't Save login Details
-Clicked: Don't Save login Details
+Result: <nil>
 Processing element: Don't Turn On Notifications
 Clicked: Don't Turn On Notifications
+Result: <nil>
 Logged in Successfully!
 Processing elements chain
 Processing element: Searching For The Profile
-Set value: onefootball
+Set value: biomes
+Result: <nil>
 Processing element: Clicking On The Profile
 Clicked: Clicking On The Profile
-Processing element: Click Followers
-Clicked: Click Followers
-Scrolled Successfully!
+Result: <nil>
+Processing element: Getting Posts Count
+Text value: 215
+Result: 215
+Result from Search 215 has type string
+Generating Profile Images List Max Images: 215
+Processing elements chain
+Processing element: Image at Row 1 Column 1
+Clicked: Image at Row 1 Column 1
+Result: <nil>
+Processing element: Find Image R:1 C:1
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 1 Column 2
+Clicked: Image at Row 1 Column 2
+Result: <nil>
+Processing element: Find Image R:1 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/293009368_1190594671482391_1562232350418141749_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=TdtRWwJ77GgAX_oS1GA&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg4MDg4OTQ2Mjg4OTY3NzY5OA%3D%3D.2-ccb7-5&oh=00_AT83BVAp62F0fvBvv9F5lawMPUR0qJnk5CkNtotcWASjYw&oe=62D6E698&_nc_sid=30a2ef 
+Closed Image: Find Image R:1 C:2
+Result: 0xc0002e30a0
+Processing element: Image at Row 1 Column 3
+Clicked: Image at Row 1 Column 3
+Result: <nil>
+Processing element: Find Image R:1 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/293359660_718255292810731_2561839689937638034_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=l1XbvO0CR34AX_emfkG&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg4MDE2NjA0NTE0MDAxNzYxNQ%3D%3D.2-ccb7-5&oh=00_AT9QUZuHMK3lhFcINMLJMkbSr9W_VnTWcrHDYMJ1OGCxgQ&oe=62D7052E&_nc_sid=30a2ef 
+Closed Image: Find Image R:1 C:3
+Result: 0xc0002fd450
+Processing element: Image at Row 2 Column 1
+Clicked: Image at Row 2 Column 1
+Result: <nil>
+Processing element: Find Image R:2 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/292202160_759305105110267_4931694216384086967_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=X3qrWn44Y_EAX_B3q1r&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3OTA3NzUzMjMyNzc0MjY2Nw%3D%3D.2-ccb7-5&oh=00_AT-koo7QbVGeOaFwYOKvbm7FKw0s7q8pJl5mmE9rrmqRgg&oe=62D5315E&_nc_sid=30a2ef 
+Closed Image: Find Image R:2 C:1
+Result: 0xc0002e9a70
+Processing element: Image at Row 2 Column 2
+Clicked: Image at Row 2 Column 2
+Result: <nil>
+Processing element: Find Image R:2 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/292634365_1076418113252363_9168416752315961199_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=nNL77AAjPBgAX_EVigd&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3ODM1Mjc1NDg0MzQyODAxMQ%3D%3D.2-ccb7-5&oh=00_AT8lQakbTQ93b_9p6jimN9kOdE6HGDT1fzGMtNYMVHvA5Q&oe=62D5B241&_nc_sid=30a2ef 
+Closed Image: Find Image R:2 C:2
+Result: 0xc00048a1c0
+Processing element: Image at Row 2 Column 3
+Clicked: Image at Row 2 Column 3
+Result: <nil>
+Processing element: Find Image R:2 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/292431095_452668449620863_4923823437073221386_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=kxyli4US-r8AX-DqnL5&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3NzYyNzk3NjY0NTk3MjY1OQ%3D%3D.2-ccb7-5&oh=00_AT_GJFTLWTi_7sivJ_3LzZK_g08WBtoOwoiygA5FF-1OuQ&oe=62D57E7B&_nc_sid=30a2ef 
+Closed Image: Find Image R:2 C:3
+Result: 0xc00048aba0
+Processing element: Image at Row 3 Column 1
+Clicked: Image at Row 3 Column 1
+Result: <nil>
+Processing element: Find Image R:3 C:1
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 3 Column 2
+Clicked: Image at Row 3 Column 2
+Result: <nil>
+Processing element: Find Image R:3 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/292037567_5164100133688007_6432934095878838348_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=5wx6VoQDxlEAX-_qZDF&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3NjU0MDc4NzE2MTk2NjUxNw%3D%3D.2-ccb7-5&oh=00_AT9U30HVM3ai8xlNxJywuPigsJTKGMJXREpzwiDZIR7aWw&oe=62D5F76F&_nc_sid=30a2ef 
+Closed Image: Find Image R:3 C:2
+Result: 0xc000344320
+Processing element: Image at Row 3 Column 3
+Clicked: Image at Row 3 Column 3
+Result: <nil>
+Processing element: Find Image R:3 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/291759814_529442052261931_500216290107150608_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=MwtYWquyvBcAX9VWDQQ&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3NTQ1MzYyODg2Njc2ODcxNg%3D%3D.2-ccb7-5&oh=00_AT9V1uBLPn0RhcysATaA9xSGyVse3sJmaG7owEDcLY-E4Q&oe=62D5609C&_nc_sid=30a2ef 
+Closed Image: Find Image R:3 C:3
+Result: 0xc0002e3c30
+Processing element: Image at Row 4 Column 1
+Clicked: Image at Row 4 Column 1
+Result: <nil>
+Processing element: Find Image R:4 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/291772147_138004472189635_4136262522793156601_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=fp0aBjIjaB8AX9geupL&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3NTA2MjM0MzQ1NDU3NzA2Ng%3D%3D.2-ccb7-5&oh=00_AT9OyOUk89Ta7MG1yJsUY74Ul5Iqr-B61eIzZyaILGt_gw&oe=62D67118&_nc_sid=30a2ef 
+Closed Image: Find Image R:4 C:1
+Result: 0xc0005ee3b0
+Processing element: Image at Row 4 Column 2
+Clicked: Image at Row 4 Column 2
+Result: <nil>
+Processing element: Find Image R:4 C:2
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 4 Column 3
+Clicked: Image at Row 4 Column 3
+Result: <nil>
+Processing element: Find Image R:4 C:3
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 5 Column 1
+Clicked: Image at Row 5 Column 1
+Result: <nil>
+Processing element: Find Image R:5 C:1
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 5 Column 2
+Clicked: Image at Row 5 Column 2
+Result: <nil>
+Processing element: Find Image R:5 C:2
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 5 Column 3
+Clicked: Image at Row 5 Column 3
+Result: <nil>
+Processing element: Find Image R:5 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/291116955_163971759476920_3541473165063468637_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=104&_nc_ohc=uMPc6J1M27IAX-hgvjh&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3MTQ2NzM4ODM1ODMxOTIyMg%3D%3D.2-ccb7-5&oh=00_AT_76q3NoswkUNjPv2WbupjTZlmPSgdhlafHcXuJrh-HIg&oe=62D55AAD&_nc_sid=30a2ef 
+Closed Image: Find Image R:5 C:3
+Result: 0xc0000c3480
+Processing element: Image at Row 6 Column 1
+Clicked: Image at Row 6 Column 1
+Result: <nil>
+Processing element: Find Image R:6 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/290678031_3101973963353179_1069092904413610112_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=CHinxFYRCI0AX9ypIgW&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg3MDc0MjU3ODk3MTc2OTM2MA%3D%3D.2-ccb7-5&oh=00_AT9oqiXjioUF04wD9VTgkBllo8XfDtsgBM45Ba6i3oA_ZA&oe=62D51F13&_nc_sid=30a2ef 
+Closed Image: Find Image R:6 C:1
+Result: 0xc0003a8de0
+Processing element: Image at Row 6 Column 2
+Clicked: Image at Row 6 Column 2
+Result: <nil>
+Processing element: Find Image R:6 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/290369659_556626812793773_6892041055980472784_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=-IsN2_GQLusAX9wpjZo&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2OTI5MzA0NjM1NjA3Mzk2MQ%3D%3D.2-ccb7-5&oh=00_AT9KZ4BAZxTGguPPmt9DfRHEpJJlfCmuD4LHFveHrHRr-Q&oe=62D61B8D&_nc_sid=30a2ef 
+Closed Image: Find Image R:6 C:2
+Result: 0xc0002e3760
+Processing element: Image at Row 6 Column 3
+Clicked: Image at Row 6 Column 3
+Result: <nil>
+Processing element: Find Image R:6 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/290156781_512309510671734_9131160848064242517_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=guL5L2J1a4MAX_oUOVL&tn=OIbJwGYrZ1T5bV80&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2Nzg0NDY1MjgwMDkxNzI5Nw%3D%3D.2-ccb7-5&oh=00_AT9jxq55EtRnN6ODSyVSWEmaNtkHhCLJwMoVBtVgC47uww&oe=62D69FAD&_nc_sid=30a2ef 
+Closed Image: Find Image R:6 C:3
+Result: 0xc0002e9b90
+Processing element: Image at Row 7 Column 1
+Clicked: Image at Row 7 Column 1
+Result: <nil>
+Processing element: Find Image R:7 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/289606916_594973492047768_3517649453827631641_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=_ppupj34JO8AX_hJhn-&tn=OIbJwGYrZ1T5bV80&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2NjM5NDQzNzE1MzYxMjg1Nw%3D%3D.2-ccb7-5&oh=00_AT9bD2BB_eVNC2IufQF5rkgDruRIXzb-HxfclTCLezmPew&oe=62D57CFA&_nc_sid=30a2ef 
+Closed Image: Find Image R:7 C:1
+Result: 0xc0003be8e0
+Processing element: Image at Row 7 Column 2
+Clicked: Image at Row 7 Column 2
+Result: <nil>
+Processing element: Find Image R:7 C:2
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 7 Column 3
+Clicked: Image at Row 7 Column 3
+Result: <nil>
+Processing element: Find Image R:7 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/288939487_570582647768331_5272447404185901477_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=KMEtWSDOhxcAX9qgNKB&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2NDIxOTYxNjQ0MTU2MTM5Nw%3D%3D.2-ccb7-5&oh=00_AT-XzRo-e1Xx5Pix6tVjsrRJROlBQ28pJTNXsXWtQSDc_Q&oe=62D63BC5&_nc_sid=30a2ef 
+Closed Image: Find Image R:7 C:3
+Result: 0xc000041ff0
+Processing element: Image at Row 8 Column 1
+Clicked: Image at Row 8 Column 1
+Result: <nil>
+Processing element: Find Image R:8 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/288655338_554675872725173_5555214823939206094_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=-u7rN9ApZFEAX95vrEF&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MzQ2NDY1MjExNTEyMTk1NA%3D%3D.2-ccb7-5&oh=00_AT_oT7qbjxjap6Q3KFyUKLzLnY7uLpw54gQVRS5LbXIpOw&oe=62D6A786&_nc_sid=30a2ef 
+Closed Image: Find Image R:8 C:1
+Result: 0xc00020e580
+Processing element: Image at Row 8 Column 2
+Clicked: Image at Row 8 Column 2
+Result: <nil>
+Processing element: Find Image R:8 C:2
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 8 Column 3
+Clicked: Image at Row 8 Column 3
+Result: <nil>
+Processing element: Find Image R:8 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/288286626_705089460789646_20217355192313715_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=uuoBa92iOpoAX__lB8i&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg2MjAxODQyODU2MzI0NTE0MA%3D%3D.2-ccb7-5&oh=00_AT9_OTFFlWOCF3YkTzm-0OE0GP8kS8hrk934cF72fIuEfA&oe=62D68746&_nc_sid=30a2ef 
+Closed Image: Find Image R:8 C:3
+Result: 0xc000345d60
+Processing element: Image at Row 9 Column 1
+Clicked: Image at Row 9 Column 1
+Result: <nil>
+Processing element: Find Image R:9 C:1
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 9 Column 2
+Clicked: Image at Row 9 Column 2
+Result: <nil>
+Processing element: Find Image R:9 C:2
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 9 Column 3
+Clicked: Image at Row 9 Column 3
+Result: <nil>
+Processing element: Find Image R:9 C:3
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 10 Column 1
+Clicked: Image at Row 10 Column 1
+Result: <nil>
+Processing element: Find Image R:10 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/287369534_469716398254537_2069656232137158272_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=T9G0ZSEvn-8AX9kQD_q&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg1OTExNjAxNzA5NjM0Njg5NQ%3D%3D.2-ccb7-5&oh=00_AT8xE2Fhttezt8TFhK4QO79T3JLqQo3dxCKRrSpFfYPc3Q&oe=62D51339&_nc_sid=30a2ef 
+Closed Image: Find Image R:10 C:1
+Result: 0xc0003c2380
+Processing element: Image at Row 10 Column 2
+Clicked: Image at Row 10 Column 2
+Result: <nil>
+Processing element: Find Image R:10 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/285432687_5569271626464020_6754096106832056354_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=DNGCyWcKOW4AX9ieqnl&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjg1MDQzNDE0NjA1Mjg3MzU0Mg%3D%3D.2-ccb7-5&oh=00_AT8lt5Bz7VL9zF0ojTf0oWryazR9iexn694qO3WLgDU91w&oe=62D565B6&_nc_sid=30a2ef 
+Closed Image: Find Image R:10 C:2
+Result: 0xc0002d30e0
+Processing element: Image at Row 10 Column 3
+Clicked: Image at Row 10 Column 3
+Result: <nil>
+Processing element: Find Image R:10 C:3
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 11 Column 1
+Clicked: Image at Row 11 Column 1
+Result: <nil>
+Processing element: Find Image R:11 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/281167847_1096309231100863_3632760581526133870_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=r8rkG6xmXqQAX8-zvZF&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjgzOTU0NzQxNTI2MzE3ODcxMw%3D%3D.2-ccb7-5&oh=00_AT-DIY39HCf4sadcG4TDPxF9Kfl5GV8i314NxzUCeFhMvQ&oe=62D615E4&_nc_sid=30a2ef 
+Closed Image: Find Image R:11 C:1
+Result: 0xc0002e2de0
+Processing element: Image at Row 11 Column 2
+Clicked: Image at Row 11 Column 2
+Result: <nil>
+Processing element: Find Image R:11 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/280653940_413817993893012_2780340848464019666_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=_fcH11YbzNIAX_fgZ48&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjgzNzM0Mjg0MjI0Njk5MDQxOQ%3D%3D.2-ccb7-5&oh=00_AT_7D1VQElHy7C3g12I4dWBZnrt-BHthmyqEkUC3XqAlog&oe=62D6DB26&_nc_sid=30a2ef 
+Closed Image: Find Image R:11 C:2
+Result: 0xc0002fcc60
+Processing element: Image at Row 11 Column 3
+Clicked: Image at Row 11 Column 3
+Result: <nil>
+Processing element: Find Image R:11 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/280340645_715872059565511_7099959787261887256_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=107&_nc_ohc=vGHTX_6x4-cAX84lbcx&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjgzNTU5MTI2NDE4ODE0MTk0OQ%3D%3D.2-ccb7-5&oh=00_AT8DoDtr_AWlEpIqoQCHvG2EqjGvsrano9V-V8hyVSDLqg&oe=62D5E1AD&_nc_sid=30a2ef 
+Closed Image: Find Image R:11 C:3
+Result: 0xc0003b5680
+Processing element: Image at Row 12 Column 1
+Clicked: Image at Row 12 Column 1
+Result: <nil>
+Processing element: Find Image R:12 C:1
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 12 Column 2
+Clicked: Image at Row 12 Column 2
+Result: <nil>
+Processing element: Find Image R:12 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/278447578_430102205549650_1262205000258780659_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=110&_nc_ohc=6OdG_f4TceoAX8YMfCP&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjgxNzcyMDc4MDk2NDU3MDExMA%3D%3D.2-ccb7-5&oh=00_AT_SK_pPnci6epAx2LDHmzE6Hq9DBk7R_39GiSUh-vYrxQ&oe=62D56A1D&_nc_sid=30a2ef 
+Closed Image: Find Image R:12 C:2
+Result: 0xc000329790
+Processing element: Image at Row 12 Column 3
+Clicked: Image at Row 12 Column 3
+Result: <nil>
+Processing element: Find Image R:12 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/277517229_1042496423005119_4945541152669558314_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=9d9Dx6-XApIAX8b_VoE&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjgwNDY2NzIzNzY4MTEzMzc2NA%3D%3D.2-ccb7-5&oh=00_AT8jSoh2Q2I_dUUXXwBOS7JVLsSPAJEGrk-guz-SXeoTHA&oe=62D57892&_nc_sid=30a2ef 
+Closed Image: Find Image R:12 C:3
+Result: 0xc00035db50
+Processing element: Image at Row 13 Column 1
+Clicked: Image at Row 13 Column 1
+Result: <nil>
+Processing element: Find Image R:13 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/275420595_1331714927312401_8281078849264951754_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=yaRt5_p60SAAX-ckYja&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=Mjc4OTQ0OTQwMTY5OTA0NDE3Mg%3D%3D.2-ccb7-5&oh=00_AT9WGkG4qbPx4deHg1J8Z0sGtpKf5ecGfe_ILADdW-Gpgg&oe=62D6262A&_nc_sid=30a2ef 
+Closed Image: Find Image R:13 C:1
+Result: 0xc00044f660
+Processing element: Image at Row 13 Column 2
+Clicked: Image at Row 13 Column 2
+Result: <nil>
+Processing element: Find Image R:13 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/269815557_441897014351684_4684833220394102430_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=Ap-BCux7b-EAX87by93&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjczNTc2OTIwNzgyMjgyODE2Nw%3D%3D.2-ccb7-5&oh=00_AT-WmptzZ3yq1vQHXtLWpJgE57O0vhbqYBgG5xmSC1Nyxg&oe=62D6BFC5&_nc_sid=30a2ef 
+Closed Image: Find Image R:13 C:2
+Result: 0xc0000c3c30
+Processing element: Image at Row 13 Column 3
+Clicked: Image at Row 13 Column 3
+Result: <nil>
+Processing element: Find Image R:13 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/257311332_635085854161857_6868754337974339664_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=YxAyPnlz0TgAX_1vOlQ&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjcwNzY2ODQ4ODI5OTc4MjUzNg%3D%3D.2-ccb7-5&oh=00_AT891dGaXJpaEMIBwtCKRsb9C2oxSReYeVPAbWlHKilbBw&oe=62D5E990&_nc_sid=30a2ef 
+Closed Image: Find Image R:13 C:3
+Result: 0xc0002e2010
+Processing element: Image at Row 14 Column 1
+Clicked: Image at Row 14 Column 1
+Result: <nil>
+Processing element: Find Image R:14 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/228222545_594938838556125_421973488040584839_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=X4g5v1eER8AAX_ZPz5W&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjYyODYyNzU3NzUxNTgwMjkyMA%3D%3D.2-ccb7-5&oh=00_AT-e6eAEyCfSAGA3EUl378GnT0f9CgjGqbLXXgPGwt84vQ&oe=62D68038&_nc_sid=30a2ef 
+Closed Image: Find Image R:14 C:1
+Result: 0xc0002fd780
+Processing element: Image at Row 14 Column 2
+Clicked: Image at Row 14 Column 2
+Result: <nil>
+Processing element: Find Image R:14 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/199328068_202834365039833_1737811714011954619_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=XxdhPQjlyLIAX-X6Cs-&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjU5MzgxODA3Mzg1NTIzODI4Mw%3D%3D.2-ccb7-5&oh=00_AT83g4lyau8Wwv9joaIuXNw3Umsj-IQKJ_oknClkXqLPsQ&oe=62D57A65&_nc_sid=30a2ef 
+Closed Image: Find Image R:14 C:2
+Result: 0xc0002e99e0
+Processing element: Image at Row 14 Column 3
+Clicked: Image at Row 14 Column 3
+Result: <nil>
+Processing element: Find Image R:14 C:3
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/140389919_243787023932610_3120639116516145645_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=106&_nc_ohc=K8tvPjDIEmoAX-2_nZw&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjQ5MDE1NDEyNjAwNjk2Mzg5Mw%3D%3D.2-ccb7-5&oh=00_AT-pS8mYKZxQHR7yafH7xktKbyOuGzKda-j8q2mQxzWL_w&oe=62D6293C&_nc_sid=30a2ef 
+Closed Image: Find Image R:14 C:3
+Result: 0xc00027b2e0
+Processing element: Image at Row 15 Column 1
+Clicked: Image at Row 15 Column 1
+Result: <nil>
+Processing element: Find Image R:15 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/119570389_129600578512109_5892173197263416936_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=105&_nc_ohc=ivafRjfhfFgAX8Ym-dL&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjQwMDc5NzI4MTQxNzY4NTkyOA%3D%3D.2-ccb7-5&oh=00_AT-uJqLdJBExim1NqUgz6TcuKhJFA4xy2_KZAdaJjf5Uiw&oe=62D51BEF&_nc_sid=30a2ef 
+Closed Image: Find Image R:15 C:1
+Result: 0xc00035dd80
+Processing element: Image at Row 15 Column 2
+Clicked: Image at Row 15 Column 2
+Result: <nil>
+Processing element: Find Image R:15 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/90636085_252650992413842_6929204614932128423_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=T2O8G8Dk_3MAX-IQkN0&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjI3MzU0MTgyNDc0MDgwOTI2NA%3D%3D.2-ccb7-5&oh=00_AT_ouFr05DdLLRKlpnibhHc6-vgqyGltDb3HXOBFD2PZkA&oe=62D5D5EB&_nc_sid=30a2ef 
+Closed Image: Find Image R:15 C:2
+Result: 0xc00048a2b0
+Processing element: Image at Row 15 Column 3
+Clicked: Image at Row 15 Column 3
+Result: <nil>
+Processing element: Find Image R:15 C:3
+Error: context deadline exceeded
+Recover from Error: context deadline exceeded
+Result: <nil>
+Processing element: Image at Row 16 Column 1
+Clicked: Image at Row 16 Column 1
+Result: <nil>
+Processing element: Find Image R:16 C:1
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/39820353_230762240925119_4185484155808645120_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=111&_nc_ohc=_dLKHmhRIYEAX9x3gqw&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTg2MDI3MjQ4NzEwODMyNzk2Mw%3D%3D.2-ccb7-5&oh=00_AT8F5743TwyKKkMQZrERsJuWBZ1oRaK0YNx7iUDbH76Ihg&oe=62D59FBF&_nc_sid=30a2ef 
+Closed Image: Find Image R:16 C:1
+Result: 0xc000345350
+Processing element: Image at Row 16 Column 2
+Clicked: Image at Row 16 Column 2
+Result: <nil>
+Processing element: Find Image R:16 C:2
+image: https://scontent-ber1-1.cdninstagram.com/v/t51.2885-15/51367032_2154168617975149_4024909432355013993_n.jpg?stp=dst-jpg_e15_fr_s1080x1080&_nc_ht=scontent-ber1-1.cdninstagram.com&_nc_cat=101&_nc_ohc=ytU50iJEwPEAX8z77fr&tn=OIbJwGYrZ1T5bV80&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTk3NDg0MTA5NDAyMjU5MDc0OQ%3D%3D.2-ccb7-5&oh=00_AT9vo4uhXfGQRY-SZ7Ob2GwkOdLQvxMCpZfvkHjvWeaSRw&oe=62D5B1C1&_nc_sid=30a2ef 
+Closed Image: Find Image R:16 C:2
+Result: 0xc00044f040
+Processing element: Image at Row 16 Column 3

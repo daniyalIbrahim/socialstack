@@ -14,7 +14,16 @@
 ## How Robust is This Service
 
 
-## How to Use This Service
+### How to Use This Service
+
+    ./bin/main.exe -user <user-name> -pass <your-password> -search <profile-to-search> 
+#### Extra Options for Debugging
+The automated operations are too fast for human eyes to catch, let's update run the module with extra options
+
+    # enable the slow-motion and visual trace configs
+    -rod show,slow=1s,trace 
+    # Let's append a new config to the -rod flag to enable the Devtools,
+    -rod show,devtools
 
 
 ## Live demo
